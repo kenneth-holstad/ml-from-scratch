@@ -17,6 +17,7 @@ df['species'] = iris.target
 
 
 
+
 '''                 end analysis                               '''
 
 '''
@@ -31,3 +32,6 @@ y = df['species'].to_numpy()
 
 model = KNN(k=5)
 model.fit(X, y)
+
+
+# could optimize k-value later via k-fold cross validation, or elbow method
